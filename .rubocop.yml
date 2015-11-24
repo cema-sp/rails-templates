@@ -1,0 +1,30 @@
+require: rubocop-rspec
+AllCops:
+  RunRailsCops: true
+  Exclude:
+    - 'db/schema.rb'
+    - 'bin/spring'
+Documentation:
+  Enabled: false
+Lint/HandleExceptions:
+  Exclude:
+    - 'bin/**/*'
+RSpec/DescribeClass:
+  Exclude:
+    - 'spec/views/**/*'
+    - 'spec/features/**/*'
+    - 'spec/routing/**/*'
+RSpec/FilePath:
+  Exclude:
+    - 'spec/routing/**/*'
+Style/RegexpLiteral:
+  Exclude:
+    - 'Guardfile'
+Metrics/LineLength:
+  Exclude:
+    - 'config/**/*'
+    - 'script/cucumber'
+    - 'features/support/env.rb'
+    - 'db/migrate/**/*'
+    - 'spec/spec_helper.rb'
+    - 'spec/rails_helper.rb'
